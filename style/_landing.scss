@@ -1,0 +1,26 @@
+body { // Grid area of landing page in desktop
+	display: grid;
+	grid-template-rows: auto 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		"navegation navegation"
+		"hero coverImages";
+}
+// Responsive
+@media screen and (max-width: $mobile) {
+	body { // Grid area of landing page in mobile
+		grid-template-rows: auto 1fr 1fr;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"navegation"
+			"coverImages"
+            "hero";
+	}
+    .nav { // Hide desktop nav and show mobile nav
+        display: none;
+        // Hidde nav cover
+        &-cover {
+            display: flex;
+        }
+    }
+}

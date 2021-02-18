@@ -10,4 +10,90 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+}
+
+.nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: navegation;
+  height: 100px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #151515), color-stop(50%, white));
+  background: linear-gradient(90deg, #151515 50%, white 50%);
+  color: white;
+}
+
+.nav-cover {
+  display: none;
+}
+
+.hero {
+  background-color: #151515;
+  color: white;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: hero;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-content {
+  height: 100%;
+}
+
+.cover {
+  background-color: white;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: coverImages;
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-top: 1px solid white;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "navegation navegation" "hero coverImages";
+}
+
+@media screen and (max-width: 470px) {
+  body {
+    -ms-grid-rows: auto 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "navegation" "coverImages" "hero";
+  }
+  .nav {
+    display: none;
+  }
+  .nav-cover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 /*# sourceMappingURL=main.css.map */

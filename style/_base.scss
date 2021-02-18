@@ -1,0 +1,38 @@
+// Base style
+.nav {
+	grid-area: navegation;
+	height: 100px;
+	width: 100%;
+    // Divide color in header
+	background: linear-gradient(90deg, $black 50%, white 50%);
+    color: white;
+	// Hidde nav cover in breakpoint desktop
+	&-cover {
+		display: none;
+	}
+}
+.hero {
+	background-color: $black;
+    color: white;
+	grid-area: hero;
+	height: 100%;
+	width: 100%;
+	// Adding flex
+	display: flex;
+	flex-direction: column;
+	&-content {
+		height: 100%;
+	}
+}
+.cover {
+	background-color: white;
+	grid-area: coverImages;
+	height: 100%;
+	width: 100%;
+}
+.footer {
+	height: 100px;
+	width: 100%;
+	align-self: flex-end;
+    border-top: 1px solid white ;
+}
