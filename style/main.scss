@@ -1,0 +1,14 @@
+// Base
+* {
+	all: unset;
+	display: revert;
+	font-size: 16px;
+	text-decoration: none;
+	scroll-behavior:smooth;
+}
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+// Importing others files
+@import './variables';
