@@ -1,26 +1,109 @@
-body { // Grid area of landing page in desktop
+body {
+	// Grid area of landing page in desktop
 	display: grid;
 	grid-template-rows: auto 1fr;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-areas:
 		"navegation navegation"
 		"hero coverImages";
 }
 // Responsive
-@media screen and (max-width: $mobile) {
-	body { // Grid area of landing page in mobile
+
+@media screen and (max-width: 860px) {
+    .input {
+        width: 100%;
+        margin: 0;
+    }
+    .btn {
+        &-cta {
+            margin-top: 12px;
+            width: 100%;
+        }
+    }
+    .hero {
+        &-content{
+            margin: 3% 0;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+	body {
+		// Grid area of landing page in mobile
 		grid-template-rows: auto 1fr 1fr;
 		grid-template-columns: 1fr;
 		grid-template-areas:
 			"navegation"
 			"coverImages"
-            "hero";
+			"hero";
 	}
-    .nav { // Hide desktop nav and show mobile nav
-        display: none;
-        // Hidde nav cover
-        &-cover {
-            display: flex;
-        }
+	.nav {
+		// Hide desktop nav and show mobile nav
+		display: none;
+		// Hidde nav cover
+		&-cover {
+			display: flex;
+            visibility: visible;
+			justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            background-color: rgba(21, 21, 21, 0.1);
+            backdrop-filter: blur(5px);
+			&-logo {
+				font-size: 1.75rem;
+				font-family: $font3;
+				color: $white;
+				font-weight: bold;
+			}
+            &-links {
+                > a {
+                    font-family: $font2;
+                    font-size: 1.125rem;
+                    font-weight: 500;
+                    color: $white;
+                    cursor: pointer;
+                    opacity: 0.8;
+                    margin-right: 18px;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+		}
+	}
+    .cover {
+        background-image: url(../img/alex-maloney-3Cu-mf5NXsA-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
     }
+    .container {
+		padding: 0 20px;
+	}
+	.hero {
+		&-content {
+			padding-top: 24px;
+			margin: 0;
+			&-cta {
+				> h3 {
+					text-align: center;
+					margin-bottom: 12px;
+				}
+			}
+		}
+	}
+	.btn {  
+		&-cta {
+			margin-top: 8px;
+			width: 100%;
+			font-size: 18px;
+		}
+        &-outline {
+            color: $white;
+            border: 2px solid $white;
+        }
+	}
+	.input {
+		width: 100%;
+	}
 }

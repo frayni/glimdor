@@ -15,20 +15,108 @@ body {
   height: 100vh;
 }
 
+@media screen and (min-width: 810px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.container {
+  padding: 0 50px;
+}
+
+.btn, .btn-cta, .modal-body button, .btn-outline {
+  padding: 12px 24px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Work Sans", Sans Serif;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.btn-cta, .modal-body button {
+  font-size: 18px;
+  background-color: white;
+  color: #151515;
+}
+
+.btn-outline {
+  font-size: 1.125rem;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  padding: 0.625rem 1rem;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.btn-outline:hover {
+  background: #ffffff;
+  color: #151515;
+}
+
+.input, .modal-body input {
+  font-size: 16px;
+  color: white;
+  font-family: "Work Sans", Sans Serif;
+  padding: 12px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  width: 65%;
+  margin-right: 8px;
+}
+
 .nav {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: navegation;
-  height: 100px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #151515), color-stop(50%, white));
-  background: linear-gradient(90deg, #151515 50%, white 50%);
-  color: white;
+  position: fixed;
 }
 
 .nav-cover {
   display: none;
+}
+
+.nav-content {
+  padding-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-logo {
+  font-size: 1.75rem;
+  font-family: "Dancing Script", Sans Serif;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.nav-links > a {
+  font-family: "Work Sans", Sans Serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  margin-right: 28px;
+  opacity: 0.8;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.nav-links > a:hover {
+  opacity: 1;
+  color: white;
 }
 
 .hero {
@@ -50,23 +138,162 @@ body {
 
 .hero-content {
   height: 100%;
+  margin: 20% 0 10% 0;
+}
+
+.hero-content-message > h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Archivo Narrow", Sans Serif;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.hero-content-message > p {
+  font-family: "Work Sans", Sans Serif;
+  font-size: 18px;
+  font-weight: regular;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.hero-content-cta {
+  margin-top: 24px;
+}
+
+.hero-content-cta > h3 {
+  color: #ffffff;
+  font-family: "Work Sans", Sans Serif;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
 }
 
 .cover {
-  background-color: white;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: coverImages;
   height: 100%;
   width: 100%;
+  background-image: url(../img/olena-sergienko-RVmjJfRM90s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer {
-  height: 100px;
   width: 100%;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  border-top: 1px solid white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer > p {
+  font-family: "Work Sans", Sans Serif;
+  font-size: 1rem;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border-radius: 8px;
+  max-width: 400px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.modal-header {
+  padding: 18px 16px;
+  text-align: center;
+}
+
+.modal-header > h2 {
+  color: #151515;
+  font-family: "Work Sans", Sans Serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-body input {
+  border: 2px solid #CDCDCD;
+  color: #151515;
+  width: 100%;
+}
+
+.modal-body button {
+  margin: 12px 0;
+  width: 100%;
+  background-color: #151515;
+  color: #ffffff;
+}
+
+/* The Close Button */
+.close {
+  color: #CDCDCD;
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close :focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 body {
@@ -74,12 +301,26 @@ body {
   display: grid;
   -ms-grid-rows: auto 1fr;
       grid-template-rows: auto 1fr;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "navegation navegation" "hero coverImages";
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 860px) {
+  .input, .modal-body input {
+    width: 100%;
+    margin: 0;
+  }
+  .btn-cta, .modal-body button {
+    margin-top: 12px;
+    width: 100%;
+  }
+  .hero-content {
+    margin: 3% 0;
+  }
+}
+
+@media screen and (max-width: 810px) {
   body {
     -ms-grid-rows: auto 1fr 1fr;
         grid-template-rows: auto 1fr 1fr;
@@ -94,6 +335,64 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    visibility: visible;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 12px 20px;
+    background-color: rgba(21, 21, 21, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  .nav-cover-logo {
+    font-size: 1.75rem;
+    font-family: "Dancing Script", Sans Serif;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .nav-cover-links > a {
+    font-family: "Work Sans", Sans Serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0.8;
+    margin-right: 18px;
+  }
+  .nav-cover-links > a:hover {
+    opacity: 1;
+  }
+  .cover {
+    background-image: url(../img/alex-maloney-3Cu-mf5NXsA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .hero-content {
+    padding-top: 24px;
+    margin: 0;
+  }
+  .hero-content-cta > h3 {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .btn-cta, .modal-body button {
+    margin-top: 8px;
+    width: 100%;
+    font-size: 18px;
+  }
+  .btn-outline {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+  .input, .modal-body input {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing page</title>
+	<!-- Style -->
+	<link rel="stylesheet" href="./style/main.css" />
+	<!-- Google font CDN -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Archivo+Narrow:regular,italic,500,500italic,600,600italic,700,700italic"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700"
+		rel="stylesheet"
+	/>
+</head>
+<body>
+	<nav class="nav">
+		<div class="container nav-content">
+			<h2 class="nav-logo">Name</h2>
+			<div class="nav-links">
+				<a href="./esIndex.html">Español</a>
+				<button class="btn-outline" id="openModal">Join<button>
+			</div>
+		</div>
+	</nav>
+	<section class="hero">
+		<!-- Divided in 2 section -->
+		<div class="container hero-content">
+				<div class="hero-content-message">
+					<h1>¡Coming soon!</h1>
+					<p>It's a new year and a New opportunity to break the rules and Shine. Our brand is designed to innovate formulas and offer you the best quality products, made with the best ingredients. Our purpose is to mix freshness and elegance in each Bottle. To make you feel confident  in your own skin. </p>
+				</div>
+				<div class="hero-content-cta">
+					<h3>¡Subscribe to our mailing list!</h3>
+					<form action="">
+						<input type="email" class="input" placeholder="Enter your e-mail address" required>
+						<button class="btn-cta">Subscribe</button>
+					</form>
+				</div>
+		</div>
+		<footer class="footer">
+			<p>© Copyright 2021 all rights reserved</p>
+		</footer>
+	</section>
+	<section class="cover">
+		<div class="container-black">
+				<!-- Nav element in mobile view -->
+				<div class="nav-cover">
+			<h2 class="nav-cover-logo">Name</h2>
+			<div class="nav-cover-links">
+				<a href="esIndex.html">Español</a>
+				<button class="btn-outline" id="openModal">Join<button>
+			</div>
+				</div>
+		</div>
+	</section>
+	<section>
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>¡Subscribe to our mailing list!</h2>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<input type="email" placeholder="Enter your e-mail address" required>
+						<button class="btn-cta">Subscribe</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="./app.js"></script>
+</body>
+</html>

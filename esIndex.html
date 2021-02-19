@@ -22,22 +22,63 @@
 		/>
 	</head>
 	<body>
-		<div class="nav">
-			<h2>Navegation Desktop</h2>
-		</div>
-		<div class="hero">
+		<nav class="nav">
+			<div class="container nav-content">
+				<h2 class="nav-logo">Name</h2>
+				<div class="nav-links">
+					<a href="./enIndex.html">English</a>
+					<button class="btn-outline" id="openModal">Únete<button>
+				</div>
+			</div>
+		</nav>
+		<section class="hero">
 			<!-- Divided in 2 section -->
-			<div class="hero-content">
-				<h1>Hero message</h1>
+			<div class="container hero-content">
+					<div class="hero-content-message">
+						<h1>¡Proximamente!</h1>
+					<p>Es un año nuevo y una nueva oportunidad para romper las reglas y brillar. Nuestra marca está diseñada para innovar fórmulas y ofrecerte productos de la mejor calidad, elaborados con los mejores ingredientes. Nuestro propósito es mezclar frescura y elegancia en cada Botella. Para que se sienta seguro de su propia piel.</p>
+					</div>
+					<div class="hero-content-cta">
+						<h3>¡Suscríbete a nuestra lista de correo!</h3>
+						<form action="">
+							<input type="email" class="input" placeholder="Ingresa tu correo electronico" required>
+							<button class="btn-cta">Subscribirse</button>
+						</form>
+					</div>
 			</div>
-			<div class="footer">
-				<h2>Footer</h2>
+			<footer class="footer">
+				<p>© Copyright 2021 all rights reserved</p>
+			</footer>
+		</section>
+		<section class="cover">
+			<div class="container-black">
+					<!-- Nav element in mobile view -->
+					<div class="nav-cover">
+				<h2 class="nav-cover-logo">Name</h2>
+				<div class="nav-cover-links">
+					<a href="#">English</a>
+					<button class="btn-outline" id="openModal">Únete<button>
+				</div>
+					</div>
 			</div>
-		</div>
-		<div class="cover">
-			<div class="nav-cover">
-				<h2>Navegation mobile</h2>
+		</section>
+		<section>
+			<div id="myModal" class="modal">
+	<!-- Modal content -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<span class="close">&times;</span>
+						<h2>¡Suscríbete a nuestra lista de correo!</h2>
+					</div>
+					<div class="modal-body">
+						<form action="">
+							<input type="email" placeholder="Ingresa tu correo electronico" required>
+							<button class="btn-cta">Subscribirse</button>
+						</form>
+					</div>
+				</div>
 			</div>
-		</div>
+		</section>
+		<script src="./app.js"></script>
 	</body>
 </html>
