@@ -212,6 +212,7 @@ body {
 .footer > p {
   font-family: "WorkSans", Sans Serif;
   font-size: 1rem;
+  color: #151515;
 }
 
 body {
@@ -267,7 +268,7 @@ body {
   .nav-cover-logo {
     font-size: 2.125rem;
     font-family: "DancingScript", Sans Serif;
-    color: #FE8C7B;
+    color: #FECDBD;
     font-weight: bold;
   }
   .nav-cover-links > a {
