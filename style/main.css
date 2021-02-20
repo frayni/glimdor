@@ -93,6 +93,14 @@ body {
   border: 2px solid #151515;
 }
 
+#en-lang1 {
+  display: none;
+}
+
+#en-lang2 {
+  display: none;
+}
+
 .nav {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -287,7 +295,7 @@ body {
     background-image: url(../img/image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 380px;
   }
   .container {
     padding: 0 20px;

@@ -60,6 +60,14 @@
 }
 
 // Base style
+#en-lang{
+	&1 {
+		display: none;
+	}
+	&2 {
+		display: none;
+	}
+}
 .nav {
 	grid-area: navegation;
 	width: 100%;
