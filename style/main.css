@@ -296,6 +296,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 380px;
+    background-color: #ffffff;
   }
   .container {
     padding: 0 20px;
