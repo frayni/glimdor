@@ -1,18 +1,30 @@
 // Colors
-$primary: #FECDBD;
+$primary: #FE8C7B;
 $secundario: #F5FFFA;
-$primario-light: #FFE0D6;
+$primario-light: #FECDBD;
 $white-light: #FCF9ED;
 $black: #151515;
 $white: #ffffff;
 // Gray color
-$gray1: #B2B2B2;
+$gray1: #A6A6A6;
 $gray2: #CDCDCD;
 $gray3: #D7D7D7;
 // Fonts
-$font1: 'Archivo Narrow', Sans Serif;
-$font2: 'Work Sans', Sans Serif;
-$font3: 'Dancing Script', Sans Serif;
+@font-face {
+    font-family: 'ArchivoNarrow-b';
+    src: url(./fonts/ArchivoNarrow-Bold.ttf);
+}
+@font-face {
+    font-family: 'WorkSans';
+    src: url(./fonts/WorkSans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'DancingScript';
+    src: url(./fonts/DancingScript-VariableFont_wght.ttf);
+}
+$font1: 'Archivo-b', Sans Serif;
+$font2: 'WorkSans', Sans Serif;
+$font3: 'DancingScript', Sans Serif;
 // Breakpoints
 $laptop: 1024px;
 $tablet: 810px;
