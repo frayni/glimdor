@@ -26,33 +26,37 @@
 	&-cta {
 		@extend .btn;
 		font-size: 18px;
-		background-color: white;
-		color: $black;
+		background-color: $primary;
+		color: $white;
 	}
 	&-outline {
 		@extend .btn;
 		font-size: 1.125rem;
-		color: $white;
+		color: $primary;
 		background: transparent;
-		border: 2px solid $white;
+		border: 2px solid $primary;
 		padding: 0.625rem 1rem;
 		transition-duration: 300ms;
 		&:hover {
-			background: $white;
-			color: $black;
+			background: $primary;
+			color: $white;
 		}
 	}
 }
 // Input
 .input {
 	font-size: 16px;
-	color: white;
+	color: $black;
 	font-family: $font2;
 	padding: 12px;
-	border: 2px solid $white;
+	border: 2px solid $gray2;
 	border-radius: 8px;
 	width: 65%;
 	margin-right: 8px;
+	transition-duration: 300ms;
+	&:focus {
+		border: 2px solid $black;
+	}
 }
 
 // Base style
@@ -71,9 +75,9 @@
 		justify-content: space-between;
 	}
 	&-logo {
-		font-size: 1.75rem;
+		font-size: 34px;
 		font-family: $font3;
-		color: $white;
+		color: $primario-light;
 		font-weight: bold;
 	}
 	&-links {
@@ -81,21 +85,20 @@
 			font-family: $font2;
 			font-size: 1.125rem;
 			font-weight: 500;
-			color: $white;
+			color: $black;
 			cursor: pointer;
 			margin-right: 28px;
 			opacity: 0.8;
 			transition-duration: 300ms;
 			&:hover {
 				opacity: 1;
-				color: white;
 			}
 		}
 	}
 }
 .hero {
-	background-color: $black;
-	color: white;
+	background: radial-gradient(100% 102.5% at 0% 0%, #fcf9ed 0%, #fdfeff 100%);
+	color: $white;
 	grid-area: hero;
 	height: 100%;
 	width: 100%;
@@ -110,7 +113,7 @@
 				font-size: 3rem;
 				font-weight: bold;
 				font-family: $font1;
-				color: $white;
+				color: $primary;
 				margin-bottom: 1rem;
 			}
 			> p {
@@ -118,14 +121,15 @@
 				font-size: 18px;
 				font-weight: regular;
 				line-height: 1.6;
-				color: $white;
+				color: $gray1;
 			}
 		}
 		&-cta {
 			margin-top: 24px;
 			> h3 {
-				color: $white;
+				color: $black;
 				font-family: $font2;
+				font-weight: 500;
 				font-size: 18px;
 				margin-bottom: 0.5rem;
 			}
@@ -133,15 +137,13 @@
 	}
 }
 .cover {
-	// background-color: white;
 	grid-area: coverImages;
 	height: 100%;
 	width: 100%;
-	background-image: url(../img/olena-sergienko-RVmjJfRM90s-unsplash.jpg);
+	background-color: $black;
+	background-image: url(../img/pexels-jana-kukebal-6689399.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	// background-color: lighten($black, 70);
-	// background-blend-mode: multiply;
 }
 .footer {
 	width: 100%;
@@ -151,91 +153,5 @@
 	> p {
 		font-family: $font2;
 		font-size: 1rem;
-	}
-}
-/* The Modal (background) */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgba(255, 255, 255, 0.2); /* Black w/ opacity */
-	&-content {
-		position: relative;
-		background-color: #fefefe;
-		margin: auto;
-		padding: 0;
-		border-radius: 8px;
-		max-width: 400px;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		-webkit-animation-name: animatetop;
-		-webkit-animation-duration: 0.4s;
-		animation-name: animatetop;
-		animation-duration: 0.4s;
-	}
-	&-header {
-		padding: 18px 16px;
-		text-align: center;
-		> h2 {
-			color: $black;
-			font-family: $font2;
-			font-size: 28px;
-			font-weight: bold;
-		}
-	}
-	&-body {
-		padding: 2px 16px;
-		input {
-			@extend .input;
-			border: 2px solid $gray2;
-			color: $black;
-			width: 100%;
-		}
-		button {
-			@extend .btn-cta;
-			margin: 12px 0;
-			width: 100%;
-			background-color: $black;
-			color: $white;
-		}
-	}
-}
-/* The Close Button */
-.close {
-	color: $gray2;
-	float: right;
-	font-size: 32px;
-	font-weight: bold;
-	&:hover,
-	:focus {
-		color: red;
-		text-decoration: none;
-		cursor: pointer;
-	}
-}
-/* Add Animation */
-@-webkit-keyframes animatetop {
-	from {
-		top: -300px;
-		opacity: 0;
-	}
-	to {
-		top: 0;
-		opacity: 1;
-	}
-}
-@keyframes animatetop {
-	from {
-		top: -300px;
-		opacity: 0;
-	}
-	to {
-		top: 0;
-		opacity: 1;
 	}
 }
