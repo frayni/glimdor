@@ -53,9 +53,9 @@ enLang1.onclick = function () {
     enLang2.style.display = "none";
 	// Translate
 	document.getElementById("title").innerHTML = "¡Coming soon!";
-	document.getElementById("title-p").innerHTML = "It's a new year and a new opportunity to break the rules and shine. Our lipstick brand is designed to innovate formulas and offer you the best quality products, made with the finest ingredients. Our purpose is to mix freshness and elegance in every bottle. So you can feel confident in your own skin.";
+	document.getElementById("title-p").innerHTML = "It's a new year and a new opportunity to break the rules and shine. Our lipgloss brand is designed to innovate formulas and offer you the best quality products, made with the finest ingredients. Our purpose is to mix freshness and elegance in every bottle. So you can feel confident in your own skin.";
 	document.getElementById("title-mail").innerHTML =
-		"¡Join to our mailing list!!";
+		"¡Join to our mailing list!";
 	document.getElementById("cta-mail").innerHTML = "Join";
 	document.getElementById("cta-input").placeholder="Enter your e-mail address";
 	document.getElementById("btn-nav1").innerHTML = "Join";
@@ -70,9 +70,9 @@ enLang2.onclick = function () {
     enLang2.style.display = "none";
 	// Translate
 	document.getElementById("title").innerHTML = "¡Coming soon!";
-	document.getElementById("title-p").innerHTML = "It's a new year and a new opportunity to break the rules and shine. Our lipstick brand is designed to innovate formulas and offer you the best quality products, made with the finest ingredients. Our purpose is to mix freshness and elegance in every bottle. So you can feel confident in your own skin.";
+	document.getElementById("title-p").innerHTML = "It's a new year and a new opportunity to break the rules and shine. Our lipgloss brand is designed to innovate formulas and offer you the best quality products, made with the finest ingredients. Our purpose is to mix freshness and elegance in every bottle. So you can feel confident in your own skin.";
 	document.getElementById("title-mail").innerHTML =
-		"¡Join to our mailing list!!";
+		"¡Join to our mailing list!";
 	document.getElementById("cta-mail").innerHTML = "Join";
 	document.getElementById("cta-input").placeholder="Enter your e-mail address";
 	document.getElementById("btn-nav1").innerHTML = "Join";

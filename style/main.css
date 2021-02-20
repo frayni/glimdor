@@ -16,7 +16,7 @@ body {
 }
 
 @font-face {
-  font-family: 'ArchivoNarrow-b';
+  font-family: 'ArchivoNarrow';
   src: url(./fonts/ArchivoNarrow-Bold.ttf);
 }
 
@@ -171,8 +171,7 @@ body {
 
 .hero-content-message > h1 {
   font-size: 3rem;
-  font-weight: bold;
-  font-family: "Archivo-b", Sans Serif;
+  font-family: "ArchivoNarrow", Sans Serif;
   color: #FE8C7B;
   margin-bottom: 1rem;
 }
@@ -207,6 +206,8 @@ body {
   background-image: url(../img/pexels-jana-kukebal-6689399.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: white;
+  background-blend-mode: multiply;
 }
 
 .footer {

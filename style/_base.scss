@@ -119,7 +119,6 @@
 		&-message {
 			> h1 {
 				font-size: 3rem;
-				font-weight: bold;
 				font-family: $font1;
 				color: $primary;
 				margin-bottom: 1rem;
@@ -152,6 +151,9 @@
 	background-image: url(../img/pexels-jana-kukebal-6689399.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	// Color in the background
+	background-color: lighten($white, 70);
+	background-blend-mode: multiply;
 }
 .footer {
 	width: 100%;

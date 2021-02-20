@@ -11,7 +11,7 @@ $gray2: #CDCDCD;
 $gray3: #D7D7D7;
 // Fonts
 @font-face {
-    font-family: 'ArchivoNarrow-b';
+    font-family: 'ArchivoNarrow';
     src: url(./fonts/ArchivoNarrow-Bold.ttf);
 }
 @font-face {
@@ -22,7 +22,7 @@ $gray3: #D7D7D7;
     font-family: 'DancingScript';
     src: url(./fonts/DancingScript-VariableFont_wght.ttf);
 }
-$font1: 'Archivo-b', Sans Serif;
+$font1: 'ArchivoNarrow', Sans Serif;
 $font2: 'WorkSans', Sans Serif;
 $font3: 'DancingScript', Sans Serif;
 // Breakpoints
