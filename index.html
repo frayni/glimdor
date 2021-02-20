@@ -7,6 +7,19 @@
 	<title>Landing page</title>
 	<!-- Style -->
 	<link rel="stylesheet" href="./style/main.css" />
+	<!-- Google font CDN -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Archivo+Narrow:regular,italic,500,500italic,600,600italic,700,700italic"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700"
+		rel="stylesheet"
+	/>
 	<!-- Animate -->
 	<link
 		rel="stylesheet"
@@ -18,9 +31,8 @@
 		<div class="container nav-content">
 			<h2 class="nav-logo">Name</h2>
 			<div class="nav-links">
-				<a id="en-lang1">English</a>
-				<a id="es-lang1">Español</a>
-				<button class="btn-outline" id="btn-nav1" onclick="autoFocus()">Join<button>
+				<a href="./esIndex.html">Español</a>
+				<button class="btn-outline" id="openModal">Join<button>
 			</div>
 		</div>
 	</nav>
@@ -28,14 +40,14 @@
 		<!-- Divided in 2 section -->
 		<div class="container hero-content">
 				<div class="hero-content-message animate__animated animate__fadeInUp">
-					<h1 id="title">¡Coming soon!</h1>
-					<p id="title-p">It's a new year and a new opportunity to break the rules and shine. Our lipstick brand is designed to innovate formulas and offer you the best quality products, made with the finest ingredients. Our purpose is to mix freshness and elegance in every bottle. So you can feel confident in your own skin.</p>
+					<h1>¡Coming soon!</h1>
+					<p>It's a new year and a New opportunity to break the rules and Shine. Our brand is designed to innovate formulas and offer you the best quality products, made with the best ingredients. Our purpose is to mix freshness and elegance in each Bottle. To make you feel confident  in your own skin. </p>
 				</div>
 				<div class="hero-content-cta animate__animated animate__fadeIn animate__delay-2s">
-					<h3 id="title-mail">¡Subscribe to our mailing list!</h3>
+					<h3>¡Subscribe to our mailing list!</h3>
 					<form action="">
-						<input type="email" class="input" id="cta-input" autofocus placeholder="Enter your e-mail address" required>
-						<button class="btn-cta" id="cta-mail">Subscribe</button>
+						<input type="email" class="input" placeholder="Enter your e-mail address" required>
+						<button class="btn-cta">Subscribe</button>
 					</form>
 				</div>
 		</div>
@@ -45,13 +57,29 @@
 	</section>
 	<section class="cover">
 		<div class="container-black">
-			<!-- Nav element in mobile view -->
-			<div class="nav-cover">
-				<h2 class="nav-cover-logo">Name</h2>
-				<div class="nav-cover-links">
-					<a id="en-lang2">English</a>
-					<a id="es-lang2">Español</a>
-					<button class="btn-outline" id="btn-nav2" onclick="autoFocus()">Join<button>
+				<!-- Nav element in mobile view -->
+				<div class="nav-cover">
+			<h2 class="nav-cover-logo">Name</h2>
+			<div class="nav-cover-links">
+				<a href="esIndex.html">Español</a>
+				<button class="btn-outline" id="openModal">Join<button>
+			</div>
+				</div>
+		</div>
+	</section>
+	<section>
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>¡Subscribe to our mailing list!</h2>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<input type="email" placeholder="Enter your e-mail address" required>
+						<button class="btn-cta">Subscribe</button>
+					</form>
 				</div>
 			</div>
 		</div>

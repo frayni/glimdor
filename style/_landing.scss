@@ -2,13 +2,14 @@ body {
 	// Grid area of landing page in desktop
 	display: grid;
 	grid-template-rows: auto 1fr;
-	grid-template-columns: 60% 1fr;
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-areas:
 		"navegation navegation"
 		"hero coverImages";
 }
 // Responsive
-@media screen and (max-width: 875px) {
+
+@media screen and (max-width: 860px) {
     .input {
         width: 100%;
         margin: 0;
@@ -21,10 +22,11 @@ body {
     }
     .hero {
         &-content{
-            margin: 20% 0;
+            margin: 3% 0;
         }
     }
 }
+
 @media screen and (max-width: $tablet) {
 	body {
 		// Grid area of landing page in mobile
@@ -45,11 +47,12 @@ body {
 			justify-content: space-between;
             align-items: center;
             padding: 12px 20px;
-            backdrop-filter: blur(4px);
+            background-color: rgba(21, 21, 21, 0.1);
+            backdrop-filter: blur(5px);
 			&-logo {
-				font-size: 2.125rem;
+				font-size: 1.75rem;
 				font-family: $font3;
-				color: $primary;
+				color: $white;
 				font-weight: bold;
 			}
             &-links {
@@ -57,7 +60,7 @@ body {
                     font-family: $font2;
                     font-size: 1.125rem;
                     font-weight: 500;
-                    color: $black;
+                    color: $white;
                     cursor: pointer;
                     opacity: 0.8;
                     margin-right: 18px;
@@ -69,22 +72,18 @@ body {
 		}
 	}
     .cover {
-        background-image: url(../img/image.jpg);
+        background-image: url(../img/alex-maloney-3Cu-mf5NXsA-unsplash.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 350px; // Height of cover image container
+        height: 350px;
     }
     .container {
 		padding: 0 20px;
 	}
 	.hero {
-		background: radial-gradient(102.88% 100% at 0% 100%, #FCF9ED 0%, rgba(254, 255, 255, 0) 100%);
 		&-content {
 			padding-top: 24px;
 			margin: 0;
-			&-message {
-				text-align: center;
-			}
 			&-cta {
 				> h3 {
 					text-align: center;
@@ -99,6 +98,10 @@ body {
 			width: 100%;
 			font-size: 18px;
 		}
+        &-outline {
+            color: $white;
+            border: 2px solid $white;
+        }
 	}
 	.input {
 		width: 100%;
