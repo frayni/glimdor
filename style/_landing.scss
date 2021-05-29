@@ -104,4 +104,10 @@ body {
 	.input {
 		width: 100%;
 	}
+	.footer {
+		flex-direction: column;
+		> p {
+			margin: 16px 0;
+		}
+	}
 }
