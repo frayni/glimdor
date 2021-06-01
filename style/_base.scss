@@ -105,7 +105,7 @@
 	}
 }	
 .hero {
-	background: radial-gradient(100% 102.5% at 0% 0%, #fcf9ed 0%, #fdfeff 100%);
+	background: radial-gradient(102.51% 105.07% at -12.06% -14.86%, #FFF8DB 0%, #FDFEFF 100%);
 	color: $white;
 	grid-area: hero;
 	height: 100%;
@@ -119,14 +119,14 @@
 		&-message {
 			max-width: 80ch; // 80 characters allowed
 			> h1 {
-				font-size: 3rem;
+				font-size: $Rhero1;
 				font-family: $font1;
 				color: $primary;
 				margin-bottom: 1rem;
 			}
 			> p {
 				font-family: $font2;
-				font-size: 18px;
+				font-size: $Rtext-large;
 				font-weight: regular;
 				line-height: 1.6;
 				color: $gray1;

@@ -155,7 +155,7 @@ html {
 }
 
 .hero {
-  background: radial-gradient(100% 102.5% at 0% 0%, #fcf9ed 0%, #fdfeff 100%);
+  background: radial-gradient(102.51% 105.07% at -12.06% -14.86%, #FFF8DB 0%, #FDFEFF 100%);
   color: #ffffff;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -181,7 +181,7 @@ html {
 }
 
 .hero-content-message > h1 {
-  font-size: 3rem;
+  font-size: clamp(36px, 5vw, 3rem);
   font-family: "ArchivoNarrow", Sans Serif;
   color: #FE8C7B;
   margin-bottom: 1rem;
@@ -189,7 +189,7 @@ html {
 
 .hero-content-message > p {
   font-family: "WorkSans", Sans Serif;
-  font-size: 18px;
+  font-size: clamp(16px, 5vw, 1.125rem);
   font-weight: regular;
   line-height: 1.6;
   color: #A6A6A6;
