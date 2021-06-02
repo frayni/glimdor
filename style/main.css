@@ -155,7 +155,7 @@ html {
 }
 
 .hero {
-  background: radial-gradient(102.51% 105.07% at -12.06% -14.86%, #FFF8DB 0%, #FDFEFF 100%);
+  background: radial-gradient(102.51% 105.07% at -35.06% -14.86%, #FFF8DB 0%, #FDFEFF 100%);
   color: #ffffff;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -360,9 +360,6 @@ body {
   }
   .container {
     padding: 0 20px;
-  }
-  .hero {
-    background: radial-gradient(102.88% 100% at 0% 100%, #FCF9ED 0%, rgba(254, 255, 255, 0) 100%);
   }
   .hero-content {
     padding-top: 24px;
